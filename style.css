@@ -25,10 +25,24 @@ h1, ul{
 header > h1 {
     background-image: url(images/title.png);
     position: absolute;
-    text-indent: -9999px;
+    text-indent: -999px;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    max-width: 50%;
-    max-height: 20%;
-    /* make better */
+    max-width: 903px;
+    max-height: 122px;
+    margin-top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header h2{
+    margin-top: 150px;
+}
+
+.zen-summary{
+    background-image: url(images/intro-cloud.png);
+    background-repeat: no-repeat;
+    justify-content: center;
+    /* pain */
 }
