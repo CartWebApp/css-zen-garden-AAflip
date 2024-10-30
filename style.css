@@ -1,6 +1,6 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
 *{
-
+    /* font */
 }
 
 body{
@@ -37,12 +37,30 @@ header > h1 {
 }
 
 header h2{
-    margin-top: 150px;
+    display: flex;
+    margin-top: 9em;
+    margin-bottom: 0;
+    background-image: url("images/intro-cloud.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    justify-content: center;
+    width: 1000px;
+    max-width: 916.29px;
+    padding-top: 2em;
 }
 
-.zen-summary{
-    background-image: url(images/intro-cloud.png);
+#zen-summary{
+    background-image: url("images/intro-cloud.png");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 -20px;
     justify-content: center;
-    /* pain */
+    padding: 0 3em 4em 3em;
+    margin-top: 0;
+}
+
+div.preamble::before{
+    content: url("images/satelite.png");
+    /* help me */
 }
