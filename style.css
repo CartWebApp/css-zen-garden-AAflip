@@ -25,13 +25,13 @@ h1, ul{
 header > h1 {
     background-image: url(images/title.png);
     position: absolute;
-    text-indent: -999px;
+    text-indent: -9999px;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     max-width: 903px;
     max-height: 122px;
-    margin-top: 5px;
+    margin-top: 1rem;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -62,5 +62,35 @@ header h2{
 
 div.preamble::before{
     content: url("images/satelite.png");
-    /* help me */
+    position: absolute;
+    left: 0;
+    transform: scale(.5);
+}
+
+.preamble[role="article"]{
+    background-image: url("images/para-1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 900px;
+    align-self: flex-end;
+    margin-top: 4em;
+    margin-right:0;
+    background-position: right bottom;
+    padding: 3em 5em 3em 6em;
+}
+
+div.explanation::after{
+    content: url("images/rocket.png");
+    position: absolute;
+    right: 0;
+    transform: scale(.5);
+}
+
+.main.supporting{
+    display: flex;
+    flex-direction: column;
+}
+
+.supporting .benefits{
+    max-width: 30%;
 }
