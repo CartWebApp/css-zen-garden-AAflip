@@ -1,7 +1,7 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
 *{
-    /* font */
     z-index: 1;
+    font-family: 'Open Sans', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;;
 }
 
 body{
@@ -102,7 +102,7 @@ div.explanation[role]{
     padding: 2em 3em 2em 3em;
 }
 
-.main.supporting{
+.main.supporting[role^="main"]{
     display: flex;
     flex-direction: column;
 }
@@ -131,7 +131,7 @@ div.explanation[role]{
     max-width: 550px;
 }
 
-.requirements{
+.requirements[role|="article"]{
     position: relative;
     display: flex;
     align-self: center;
@@ -154,7 +154,7 @@ footer{
     margin-top: 30em;
     display: flex;
     flex-direction: row;
-    margin-bottom: 30em;
+    margin-bottom: 10em;
     justify-content: center;
     align-items: flex-end;
 }
@@ -169,11 +169,6 @@ footer a{
     background-repeat: no-repeat;
 }
 
-footer:first-child{
-    align-self: flex-start;
-    /* ?????? */
-}
-
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -186,4 +181,195 @@ footer:first-child{
 .select{
     text-indent: -9999px;
     background-image: url("images/blimp.png");
+    background-size: 100% 100%;
+    padding: 8em 20em;
+}
+
+.design-selection{
+    display: flex;
+    flex-direction: column;
+}
+
+div.design-selection nav[role~="navigation"]{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("images/para-5.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 6em;
+    max-width: fit-content;
+    padding: 3em 3em;
+}
+
+.archives{
+    text-indent: -9999px;
+}
+
+.design-archives{
+    position: relative;
+    margin-left: 30em;
+}
+
+div.design-archives ul{
+    display: flex;
+    flex-direction: row;
+}
+
+div.design-archives li{
+    margin-top: 8em;
+    list-style: none;
+    padding-right: 2em;
+}
+
+.design-archives::after{
+    content: url("images/plane-right.png");
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    transform: scale(1.5);
+}
+
+div.zen-resources h3{
+    text-indent: -9999px;
+}
+
+div.zen-resources li{
+    display: inline;
+    list-style: none;
+}
+
+div.zen-resources{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20em;
+    margin-bottom: 20em;
+}
+
+.view-css, .css-resources, .zen-faq{
+    margin-top: 20em;
+    padding: 16em 10em 1em 10em;
+    background-image: url("images/hot-air-b.png");
+    background-size: 300px 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.view-css a, .css-resources a, .zen-faq a{
+    text-decoration: none;
+    inline-size: 100px;
+    overflow-wrap: break-word; 
+}
+
+.zen-submit, .zen-translations{
+    position: relative;
+    bottom: -150px;
+    left: -45%;
+    z-index: 1;
+}
+
+.zen-translations{
+    padding-left: 2em;
+}
+
+.zen-submit::before{
+    content: url("images/plane-left.png");
+    position: absolute;
+    transform: scale(0.4);
+    right: -900px;
+    top: -110px;
+    z-index: -1;
+}
+
+li ~ a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: hotpink;
+}
+
+::selection{
+    color: white;
+    background: #33606E;
+}
+
+:root{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a[title$="e"]{
+    text-decoration: dashed transparent;
+}
+
+a[title*="no"]{
+    background: #00c3ff 0.6%;
+}
+
+a:active{
+    color: beige;
+    background-color: aqua;
+}
+
+p:empty{
+    background: transparent;
+}
+
+h3:first-child{
+    align-self: center;
+}
+
+p::first-letter{
+    color: rgb(28, 28, 28);
+}
+
+p::first-line{
+    font-weight: 10;
+}
+
+a:focus{
+    transition: background ease 200ms ;
+    font-weight: 30;
+    color: #0099c7;
+}
+
+a:hover{
+    transition: background ease 200ms ;
+    font-weight: 30;
+    color: #3fc700;
+}
+
+div:only-child{
+    text-indent: 2px;
+}
+
+p:last-child{
+    font-weight: 8;
+}
+
+a:link{
+    color: aqua;
+    text-decoration: none;
+}
+
+h3:only-of-type{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+div:nth-child(2){
+    color: rgb(33, 23, 25);
+}
+
+div:nth-last-child(2){
+    background: transparent;
+}
+
+header:nth-last-of-type(1){
+    color: #396126;
+}
+
+aside:nth-of-type(1){
+    font-size: medium;
 }
